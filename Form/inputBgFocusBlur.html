@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Events</title>
+</head>
+<body onload="entrar()">
+    <h1 id="title" >Manejo Dom</h1> 
+    <br> <br>
+    Nombre: <input type="text" onfocus="change(this)" onblur="back(this)" />
+    <script>
+        //cuando esta enfocado cambia el bg a amarillo
+        function change(elemtnInput){
+            elemtnInput.style.background = 'yellow';
+        }
+
+        //hace que al apartar el focus y clocar en otra zona esta vuelve al color de nates
+        function back(elemtnInput){
+            elemtnInput.style.background = 'white';
+        }
+
+
+       
+    </script>
+    
+</body>
+</html>
