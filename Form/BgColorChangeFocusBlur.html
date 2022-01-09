@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Events</title>
+</head>
+<body onload="entrar()">
+    <h1 id="title" >Dom</h1> 
+    <br> <br>
+    <form id="form">
+    Name: <input id="name" type="text"/>
+    <br> <br>
+    Last Name: <input id="lastName" type="text"/>
+    </form>
+    
+
+    <script>
+       const form = document.getElementById('form');
+
+       form.addEventListener('focus',(event) => {event.target.style.background = 'pink'}, true);
+       form.addEventListener('blur', (event) => {event.target.style.background = 'white'}, true);
+    </script>
+    
+</body>
+</html>
