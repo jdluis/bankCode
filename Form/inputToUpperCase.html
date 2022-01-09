@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Events</title>
+</head>
+<body onload="entrar()">
+    <h1 id="title">Manejo Dom</h1> 
+    <br> <br>
+    Name: <input type="text" onchange="convert(this)"/> 
+    <script>
+        function convert(nameInput){
+            nameInput.value = nameInput.value.toUpperCase();
+        }        
+    </script>
+    
+</body>
+</html>
+
+<!--Convert any string in the input to upperCase -->
